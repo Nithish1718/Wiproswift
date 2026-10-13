@@ -1,0 +1,24 @@
+import SwiftUI
+
+struct ContentView: View {
+    let name = "Maldini"
+    var age = 21
+
+    var body: some View {
+        VStack(spacing: 12) {
+            Text("Hello, Swift!")
+                .font(.largeTitle)
+                .bold()
+
+            Text("My name is \(name) and I am \(age) years old.")
+
+            Text("Next year I will be \(age + 1).")
+                .foregroundStyle(.secondary)
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}
